@@ -6,17 +6,17 @@ function MeetupDetail(props) {
     
       <Card > 
         <div className= {classes.detail}>
-          <img src={props.image} alt={props.title} />
+          <img src={props.meetupData.image} alt={props.meetupData.title} />
         </div>
         <div className={classes.content}>
           <h3>
-            {props.title}
+            {props.meetupData.title}
           </h3>
           <address>
-            {props.address}
+            {props.meetupData.address}
           </address>
           <p>
-            {props.description}
+            {props.meetupData.description}
           </p>
         </div>
       </Card>
