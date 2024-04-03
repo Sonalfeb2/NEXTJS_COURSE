@@ -4,8 +4,8 @@ import classes from "./MeetupDetail.module.css";
 function MeetupDetail(props) {
   return (
     
-      <Card > 
-        <div className= {classes.detail}>
+      <div  className= {classes.detail}>
+        <div>
           <img src={props.meetupData.image} alt={props.meetupData.title} />
         </div>
         <div className={classes.content}>
@@ -18,8 +18,9 @@ function MeetupDetail(props) {
           <p>
             {props.meetupData.description}
           </p>
+          </div>
         </div>
-      </Card>
+      
 
   );
 }
